@@ -176,6 +176,7 @@ return [
         PriceTracker\Providers\RouteServiceProvider::class,
 
         Weidner\Goutte\GoutteServiceProvider::class,
+        Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
 
     ],
 
@@ -232,6 +233,7 @@ return [
         'Product' => PriceTracker\Product::class,
         'Site' => PriceTracker\Site::class,
         'SiteConfig' => PriceTracker\SiteConfig::class,
+        'Lava' => Khill\Lavacharts\Laravel\LavachartsFacade::class,
     ],
 
 ];

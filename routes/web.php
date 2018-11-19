@@ -11,6 +11,8 @@
 |
 */
 
+Route::resource('products', 'ProductController');
+
 Route::get('/', function () {
 	$crawler = Goutte::request('GET', 'https://www.mec.ca/en/product/5045-197/Edge-520-GPS');
 	$price_text = $crawler->filterXpath('//*[@id="ProductDetailControls"]/div[2]/ul/li/text()')->extract(['_text']);
