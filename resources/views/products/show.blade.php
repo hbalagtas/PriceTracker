@@ -80,7 +80,7 @@
             @endif
 
             <div class="content">
-                {{ $lava->render('LineChart', 'MyStocks', 'stocks-chart') }}
+                {{ $lava->render('LineChart', 'MyStocks', 'price-chart') }}
                 
             </div> {{-- end content --}}
         </div>

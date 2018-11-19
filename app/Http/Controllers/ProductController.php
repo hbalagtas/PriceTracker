@@ -47,17 +47,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        $priceTable = \Lava::DataTable();
-
-        $priceTable->addDateColumn('Price')
-            ->addNumberColumn('Date');
         
-
-        foreach ($product->prices as $price) {
-            $priceTable->addRow([$price->price, $price->created_at]);
-        }
-
-        $chart = Lava::LineChart();
     }
 
     /**
