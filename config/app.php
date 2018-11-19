@@ -227,6 +227,11 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Goutte' => Weidner\Goutte\GoutteFacade::class,
+
+        'Price' => PriceTracker\Price::class,
+        'Product' => PriceTracker\Product::class,
+        'Site' => PriceTracker\Site::class,
+        'SiteConfig' => PriceTracker\SiteConfig::class,
     ],
 
 ];
