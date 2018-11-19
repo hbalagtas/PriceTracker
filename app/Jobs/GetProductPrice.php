@@ -8,6 +8,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use PriceTracker\Product;
+use PriceTracker\Price;
 use PriceTracker\SiteConfig;
 
 class GetProductPrice implements ShouldQueue
