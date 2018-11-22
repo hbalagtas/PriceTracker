@@ -47,7 +47,12 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
+        $price_data = '';
+        foreach ($product->prices as $price){
+            $price_data .= "['".$price->created_at->format('M-d h')."', ".$price->price."],";
+        }
         
+        return view('products.show', compact('product', 'price_data'));
     }
 
     /**
