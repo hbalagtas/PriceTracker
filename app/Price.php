@@ -14,4 +14,9 @@ class Price extends Model
     protected $fillable = [
         'product_id', 'site_id', 'price',
     ];
+
+    public function site()
+    {
+    	return $this->belongsTo(Site::class);
+    }
 }

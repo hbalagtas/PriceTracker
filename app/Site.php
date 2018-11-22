@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Site extends Model
 {
     protected $fillable = [
-        'product_id', 'url',
+        'product_id', 'site_config_id', 'url',
     ];
 }

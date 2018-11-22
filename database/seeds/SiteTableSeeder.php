@@ -15,10 +15,12 @@ class SiteTableSeeder extends Seeder
         $data = [
         	[
         		'product_id' => 1,
+                'site_config_id' => 1,
         		'url' => 'https://www.mec.ca/en/product/5045-197/Edge-520-GPS',
         	],
         	[
         		'product_id' => 1,
+                'site_config_id' => 2,
         		'url' => 'https://www.amazon.ca/Garmin-Edge-520-Bike-GPS/dp/B010SDBGQU',
         	],
         ];
